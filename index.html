@@ -1,0 +1,107 @@
+<html>
+<head>
+<!--CSS-->
+
+<link rel="stylesheet" href="css/css.css">
+
+<!--JS-->
+
+<!--Loading JQuery-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--Auto zoom-->
+
+<script type="text/javascript">document.body.style.zoom = 0.9</script>
+
+<!--Get Username (veri early testing)-->
+
+<script src="js/nanosave.js"></script>
+<script src="js/catchtext.js"></script>
+
+<!--Command Line + Features from it-->
+
+<script src="js/togglearchmode.js"></script>
+<script src="js/opencmdline.js"></script>
+<script src="js/ctrl.js"></script>
+<script src="js/checkforbackquote.js"></script>
+
+<!--PWA-->
+
+<script src="js/detectchange.js"></script>
+<script src="js/inappinstall.js"></script>
+<script src="js/afterpwa.js"></script>
+<script src="js/display.js"></script>
+<script src="js/beforeinstallscript.js"></script>
+
+<!--Main JS-->
+
+<script src="js/js.js"></script>
+<!--Remove line (Testing)-->
+<script src="js/rmline.js"></script>
+<!--Greater than on every linebreak-->
+<script src="js/greaterthan.js"></script>
+<!--Save file (very very very very early testing)-->
+<script src="js/ctrlx.js"></script>
+<!--AutoFocus-->
+<script src="js/autofocus.js"></script>
+<!--PeriodDown-->
+<script src="js/perioddown.js"></script>
+
+
+<!--Save Button-->
+
+<script src="js/savebutton.js"></script>
+
+<!--CopyNanoToClipboard (function is "copy()" )-->
+
+<script src="copy.js"></script>
+
+<!--Autotype-->
+
+<script src="js/autotype.js"></script>
+
+<!--End of JS-->
+
+<!--FGeneric-->
+
+<link rel="icon" href="favicon/512.png" sizes="512x512">
+<link rel="icon" href="favicon/256.png" sizes="256x256">
+<link rel="icon" href="favicon/128.png" sizes="128x128">
+
+<!--FAndroid-->
+
+<link rel="shortcut icon" href="favicon/256.png" sizes="256x256">
+
+<!--FiOS-->
+
+<link rel="apple-touch-icon" href="favicon/256.png" sizes="256x256">
+<link rel="apple-touch-icon" href="favicon/128.png" sizes="128x128">
+<link rel="apple-touch-icon" href="favicon/64.png" sizes="64x64">
+
+<!--PWA-->
+
+<link rel="manifest" href="./.webmanifest">
+<title>Nano</title>
+</head>
+<body style="background-color:black;" OnLoad="$("#nano").focus();">
+<div class="nano">
+    <textarea id="nano" class="text" style="background-color:#000000;" onkeypress="onTestChange();" onkeypress="perioddown();" spellcheck="false">
+Arch Linux 5.17.1-arch1 (tty1)
+
+archlinux login: user1
+Password: 
+
+[user1@archlinux -]$  </textarea>
+</div>
+
+<div style="overflow: hidden;"></div>
+
+<div class="cmdl">
+
+<button class="button archmodetoggle" onclick="togglearchmode()" style="display:none;"><abbr title="Arch mode is a fun mode in which every time you press enter it adds a new line which says &ldquo;[user1@archlinux] $  &rdquo;. This used to be a feature which was going to be permanent but I'm sure you can figure out why it isn't.">Enable Arch Mode</abbr></button>
+
+</div>
+
+</body>
+</html>
